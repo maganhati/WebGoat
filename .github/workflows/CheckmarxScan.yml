@@ -15,6 +15,6 @@ jobs:
         with:
 #          project_name: ${{ github.repository }}
           base_uri: https://ast.checkmarx.net/
-          cx_tenant: beta_nova8
+          cx_tenant: 14a17e0a-a3a3-48e4-b645-d79feede89ff
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
