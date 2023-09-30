@@ -9,11 +9,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Checkmarx AST Github Action
-        uses: Checkmarx/ast-github-action@2.0.20
+      - name: Checkmarx AST CLI Action
+        uses: checkmarx/ast-github-action@main #Github Action version
+      #  uses: Checkmarx/ast-github-action@2.0.20
         with:
-          project_name: ${{ github.repository }}
-          base_uri: https://eu.iam.checkmarx.net
+#          project_name: ${{ github.repository }}
+          base_uri: https://ast.checkmarx.net/
           cx_tenant: beta_nova8
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
