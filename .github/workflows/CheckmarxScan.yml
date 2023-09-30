@@ -17,7 +17,7 @@ jobs:
     # Provide the AST portal URL
           base_uri: https://eu.iam.checkmarx.net
     # Provide the Tenant for AST portal URL
-          cx_tenant: Nova8
+          cx_tenant: beta_nova8
     # Client ID for AST portal authentication
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
     # Secret key for AST portal authentication
